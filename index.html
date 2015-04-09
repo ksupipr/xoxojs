@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Крестики-нолики</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/functions.js" ></script>
+	<script type="text/javascript" src="js/xo.js" ></script>
+</head>
+<body>
+<div id="all_game">
+<div id="game_info">
+	<div id="player_info1" class="player_info">
+		<div><span class="player_type">X</span><span class="player_name"> </span></div>
+		<div class="player_score">0</div>
+	</div>
+	<div id="player_info2" class="player_info">
+		<div><span class="player_type">O</span><span class="player_name"> </span></div>
+		<div class="player_score">0</div>
+	</div>
+	<div id="menu">
+		<div id="raund_inf">ход: <span id="raund">0</span></div>
+		<div id="new_game" class="button" onClick="GameClass.menu();">меню</div>
+	</div>
+</div>
+<br class="clr"/>
+
+<div id="game_pole_sub">
+<div id="scroll_top" class="scroll" onClick="GameClass.scroll(0,-1);"><span>&#9650;</span></div>
+<div id="scroll_left" class="scroll" onClick="GameClass.scroll(-1,0);"><span>&#9668;</span></div>
+<div id="scroll_right" class="scroll" onClick="GameClass.scroll(1,0);"><span>&#9658;</span></div>
+
+	<div id="game_pole">
+
+	</div>
+<div id="scroll_bottom" class="scroll" onClick="GameClass.scroll(0,1);"><span>&#9660;</span></div>
+</div>
+</div>
+
+<div id="window_out"></div>
+<div id="overlay">&nbsp;</div>
+
+
+<div id="debug"></div>
+</body>
+</html>
